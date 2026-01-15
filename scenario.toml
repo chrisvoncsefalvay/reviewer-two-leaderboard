@@ -4,9 +4,9 @@
 # research plans based on goals from the facebook/research-plan-gen dataset.
 
 [green_agent]
-# Docker image for the Research Plan Evaluator green agent
+# Research Plan Evaluator green agent
 # Note: The green agent uses FLAN-T5 locally for evaluation (no external API keys needed)
-image = "ghcr.io/chrisvoncsefalvay/reviewer-two-env-green-agent:latest"
+agentbeats_id = "019bb53f-2d23-7953-9f0b-384503adcf3a"
 env = { LOG_LEVEL = "INFO" }
 
 [[participants]]
