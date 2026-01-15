@@ -1,0 +1,114 @@
+{
+  "participants": {
+    "purple": "019bc399-27ab-7933-bd44-88fe5e884bf1"
+  },
+  "results": [
+    {
+      "winner": "none",
+      "detail": {
+        "passed": false,
+        "best_score": 0.1,
+        "best_attempt": 1,
+        "total_attempts": 10,
+        "success_threshold": 0.8,
+        "scores": [
+          {
+            "attempt": 1,
+            "reward": 0.1,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.0
+          },
+          {
+            "attempt": 2,
+            "reward": 0.09000000000000001,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.01
+          },
+          {
+            "attempt": 3,
+            "reward": 0.07500000000000001,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.025
+          },
+          {
+            "attempt": 4,
+            "reward": 0.012500000000000011,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.0875
+          },
+          {
+            "attempt": 5,
+            "reward": 0.0,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.24125000000000002
+          },
+          {
+            "attempt": 6,
+            "reward": 0.0,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.451875
+          },
+          {
+            "attempt": 7,
+            "reward": 0.0,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 0.7278125
+          },
+          {
+            "attempt": 8,
+            "reward": 0.0,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 1.08171875
+          },
+          {
+            "attempt": 9,
+            "reward": 0.0,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 1.5725781250000002
+          },
+          {
+            "attempt": 10,
+            "reward": 0.0,
+            "criteria_met": 0,
+            "rubric_count": 10,
+            "length_score": 0.0,
+            "format_score": 0.0,
+            "total_penalty": 2.1888671875
+          }
+        ],
+        "config": {
+          "subset": "ml",
+          "split": "train",
+          "max_attempts": 10
+        }
+      }
+    }
+  ]
+}
