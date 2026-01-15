@@ -1,0 +1,37 @@
+# Research Plan Evaluator - AgentBeats Leaderboard Configuration
+#
+# This scenario evaluates Purple Agents on their ability to generate
+# research plans based on goals from the facebook/research-plan-gen dataset.
+
+[green_agent]
+# Research Plan Evaluator green agent
+# Note: The green agent uses FLAN-T5 locally for evaluation (no external API keys needed)
+agentbeats_id = "019bb53f-2d23-7953-9f0b-384503adcf3a"
+env = { LOG_LEVEL = "INFO" }
+
+[[participants]]
+# Purple Agent: The agent being evaluated on research plan generation
+agentbeats_id = "019bc399-27ab-7933-bd44-88fe5e884bf1"
+name = "purple"
+env = { ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}" }
+
+[config]
+# Dataset configuration
+# subset: Which research domain to use (ml, arxiv, pubmed)
+subset = "ml"
+
+# split: Dataset split (train, test)
+split = "train"
+
+# Evaluation parameters
+# max_attempts: Maximum number of submission attempts allowed
+max_attempts = 10
+
+# free_attempts: Attempts before hints start being revealed
+free_attempts = 2
+
+# task_index: Specific task index (leave empty for random selection)
+# task_index = 0
+
+# success_threshold: Minimum score (0.0-1.0) to pass the evaluation
+success_threshold = 0.8

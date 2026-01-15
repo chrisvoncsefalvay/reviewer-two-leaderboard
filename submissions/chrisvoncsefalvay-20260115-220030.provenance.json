@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/chrisvoncsefalvay/reviewer-two-env/green-agent@sha256:0d492247a89f0a4f36219015c94c829ff354945bae1e8506cfa136185b85b834",
+    "purple": "ghcr.io/chrisvoncsefalvay/reviewer-two-env/purple-agent@sha256:04d3982bd8077a38807dd39c5786be797d5f61592083ce09056ef27f3e8ba35e",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-01-15T22:00:30Z",
+  "github_actions": {
+    "run_url": "https://github.com/chrisvoncsefalvay/reviewer-two-leaderboard/actions/runs/21047752319",
+    "run_logs_url": "https://api.github.com/repos/chrisvoncsefalvay/reviewer-two-leaderboard/actions/runs/21047752319/logs",
+    "ref": "refs/heads/test-purple-submission",
+    "sha": "691a3637a0e1ce86ec9a3afda8aa0b37fc77bac1",
+    "repository_url": "https://github.com/chrisvoncsefalvay/reviewer-two-leaderboard",
+    "workflow_ref": "chrisvoncsefalvay/reviewer-two-leaderboard/.github/workflows/run-scenario.yml@refs/heads/test-purple-submission",
+    "workflow_sha": "691a3637a0e1ce86ec9a3afda8aa0b37fc77bac1"
+  }
+}
