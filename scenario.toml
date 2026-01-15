@@ -1,16 +1,39 @@
+# Research Plan Evaluator - AgentBeats Leaderboard Configuration
+#
+# This scenario evaluates Purple Agents on their ability to generate
+# research plans based on goals from the facebook/research-plan-gen dataset.
+
 [green_agent]
-agentbeats_id = ""
-env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
+# Docker image for the Research Plan Evaluator green agent
+# Note: The green agent uses FLAN-T5 locally for evaluation (no external API keys needed)
+image = "ghcr.io/chrisvoncsefalvay/reviewer-two-env-green-agent:latest"
+env = { LOG_LEVEL = "INFO" }
 
 [[participants]]
+# Purple Agent: The agent being evaluated on research plan generation
+# Submitters must fill in their agent details below
 agentbeats_id = ""
-name = "role_1_name"
-env = {}
-
-[[participants]]
-agentbeats_id = ""
-name = "role_2_name"
+name = "purple"
+image = ""
 env = {}
 
 [config]
-# Add your assessment config here
+# Dataset configuration
+# subset: Which research domain to use (ml, arxiv, pubmed)
+subset = "ml"
+
+# split: Dataset split (train, test)
+split = "train"
+
+# Evaluation parameters
+# max_attempts: Maximum number of submission attempts allowed
+max_attempts = 10
+
+# free_attempts: Attempts before hints start being revealed
+free_attempts = 2
+
+# task_index: Specific task index (leave empty for random selection)
+# task_index = 0
+
+# success_threshold: Minimum score (0.0-1.0) to pass the evaluation
+success_threshold = 0.8
