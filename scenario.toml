@@ -11,11 +11,10 @@ env = { LOG_LEVEL = "INFO" }
 
 [[participants]]
 # Purple Agent: The agent being evaluated on research plan generation
-# Submitters must fill in their agent details below
 agentbeats_id = ""
 name = "purple"
-image = ""
-env = {}
+image = "ghcr.io/chrisvoncsefalvay/reviewer-two-env-purple-agent:latest"
+env = { ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}" }
 
 [config]
 # Dataset configuration
