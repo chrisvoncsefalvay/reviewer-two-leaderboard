@@ -11,9 +11,8 @@ env = { LOG_LEVEL = "INFO" }
 
 [[participants]]
 # Purple Agent: The agent being evaluated on research plan generation
-agentbeats_id = ""
+agentbeats_id = "019bc399-27ab-7933-bd44-88fe5e884bf1"
 name = "purple"
-image = "ghcr.io/chrisvoncsefalvay/reviewer-two-env-purple-agent:latest"
 env = { ANTHROPIC_API_KEY = "${ANTHROPIC_API_KEY}" }
 
 [config]
